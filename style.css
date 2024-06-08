@@ -1,0 +1,1594 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    background-color: white;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: whitesmoke;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 20px;
+    gap: 80px;
+    margin-left: 200px;
+}
+
+header nav a{
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.5s;
+}
+
+header nav a:hover{
+    color: darkcyan;
+
+}
+
+.quote-btn{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+    border: 1px solid darkcyan;
+    background-color: transparent;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+}
+
+.quote-btn:hover{
+    background-color: darkcyan;
+    color: black;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px
+}
+
+#h0me{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 20px;
+}
+
+#h0me span{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 1s ease-in-out;
+}
+
+#h0me span img:hover{
+    /* transform: scale(1.2); */
+    filter: invert(1.5);
+}
+
+.text-side{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-side h1{
+    font-size: 45px;
+    color: rgb(157, 46, 46);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.text-side P{
+    font-size: 20px;
+    color: black;
+    
+}
+
+.me{
+    width: 40%;
+}
+
+.me img{
+    height: 600px;
+    width: 450px;
+    border-radius: 30px;
+}
+
+#about-me{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#about-me div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me h2{
+    font-size: 35px;
+    color: rgb(70, 110, 180);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+#about-me p{
+    font-size: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.passion{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.passion small{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.passion small h1{
+    color: rgb(70, 110, 180);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.passion article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 30px;
+}
+
+.passion article div{
+    width: 30%;
+}
+
+.passion article div p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 10;
+}
+
+.passion article span{
+    width: 30%;
+}
+
+.passion article span p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 100;
+}
+
+.passion article small{
+    width: 40%;
+    background-color: rgb(157, 46, 46);
+    border-radius: 15px;
+}
+
+.passion article small img{
+    width: 250px;
+    height: 400px;
+}
+
+.services{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.services div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.services div h1{
+    color: rgb(70, 110, 180);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.services div p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 10;
+}
+
+.services article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.services .left{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.services h2{
+    color: rgb(70, 110, 180);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.services p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 10;
+}
+
+.services .nextbtn:hover{
+    filter: invert(1.5);
+    transition: 0.5s;
+}
+
+.services .middle{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.services .right{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(rgba(125, 135, 132, 0.52), rgba(38, 41, 41, 0.73)), url(./images/backgroundimg.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background h1{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.background p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-weight: 10;
+}
+
+.background .playbtn:hover{
+    filter: invert(1.5);
+    transition: 0.5s ease-in-out;
+}
+
+#experience{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#experience div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#experience div h1{
+    color: rgb(70, 110, 180);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+#experience div p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 10;
+}
+
+#experience article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+#experience article h1{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+#experience article h2{
+    color: rgb(70, 110, 180);
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+#experience article p{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 10;
+}
+
+#experience article .red{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-weight: 10;
+    background-color: black;
+    border-radius: 30px;
+    padding: 5px 30px;
+    width: 100%;
+    animation: loading;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    transition: 1s;
+    left: 0;
+    height: 20px;
+}
+
+#experience article .top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#experience article .top .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+#experience article .top .right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+#experience article .bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#experience article .bottom .left{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+#experience article .bottom .middle{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+#experience article .bottom .right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+.client{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.client div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.client div h1{
+    color: rgb(70, 110, 180);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.client div p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 100;
+}
+
+.client article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.client .left{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.client article h1{
+    color: #8c1616cb;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.client article p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 10;
+}
+
+.client .top-image{
+    border: 3px solid rgb(157, 46, 46);
+    border-radius: 90%;
+    height: 80px;
+    width: 80px;
+}
+
+.client .right{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.client .middle{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.touch{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.touch div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.touch div h1{
+    color: rgb(70, 110, 180);
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+}
+
+.touch div p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-weight: 100;
+}
+
+.touch small{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.touch small input{
+    width: 30%;
+    padding: 10px 15px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid gray;
+    transition: 0.5s;
+}
+
+.touch small button{
+    padding: 10px 15px;
+    width: fit-content;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: 0.5s ease-in-out;
+}
+
+.touch small input:focus{
+    border: 1px solid crimson;
+}
+
+.touch small button:hover{
+    background-color: crimson;
+}
+
+footer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+}
+
+footer article{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(70, 110, 180);
+    padding: 40px;
+}
+
+footer article .left{
+    width: 30%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+footer .left a img:hover{
+    filter: invert(1.3);
+}
+
+footer article .middle{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer article .right{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+footer article .right p{
+    font-size: 20px;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 10;
+
+}
+
+footer aside{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(70, 110, 180);
+    padding: 25px;
+}
+
+footer aside p{
+    font-family: cursive;
+    font-weight: 45;
+    font-size: 15px;
+    color: black;
+}
+
+footer aside span{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer span aside img{
+    align-self: flex-end;
+}
+
+
+@keyframes loading{
+    from{
+        width: 0;
+        background-color: transparent;
+    }
+
+    from{
+        width: 50%;
+        background-color: rgb(70, 110, 180);
+    }
+    
+    to{
+        width: 80%;
+        background-color: rgb(157, 46, 46);
+    }
+}
+
+
+
+@media(max-width:450px){
+    body{
+        max-width: 100%;
+        background-color: white;
+        overflow-x: hidden;
+    }
+    
+    header{
+        max-width: 100%;
+        height: 60px;
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background-color: whitesmoke;
+        z-index: 5;
+        top: 0;
+    }
+    
+    header nav{
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        width: 70%;
+        min-height: calc(100vh - 320px);
+        background: linear-gradient(3600deg, rgb(157, 46, 46), rgb(70, 110, 180));
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px 20px;
+        gap: 40px;
+        opacity: 0;
+        transition: 1.2s;
+        z-index: 15;
+    }
+    
+    
+    header nav a{
+        color: black;
+        font-size: 15px;
+        font-family: cursive;
+        transition: 0.5s;
+    }
+    
+    header nav a:hover{
+        color: darkcyan;
+    
+    }
+    
+    .quote-btn{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: black;
+        border: 1px solid darkcyan;
+        background-color: transparent;
+        padding: 15px 20px;
+        border-radius: 5px;
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .quote-btn:hover{
+        background-color: darkcyan;
+        color: black;
+    }
+
+    .menu{
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        background-image: url(./images/menu.png);
+        background-position: center;
+        background-size: cover;
+        cursor: pointer;
+        transition: 0.7s;
+    }
+
+    main{
+        max-width:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+    
+    #h0me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        gap: 40px;
+    }
+    
+    #h0me span{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        transition: 1s ease-in-out;
+    }
+    
+    #h0me span img:hover{
+        /* transform: scale(1.2); */
+        filter: invert(1.5);
+    }
+    
+    .text-side{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .text-side h1{
+        font-size: 30px;
+        text-shadow: 0px 8px 13px rgb(0, 0, 0);
+        color: rgb(157, 46, 46);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .text-side P{
+        font-size: 20px;
+        color: black;
+        
+    }
+    
+    .me{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .me img{
+        height: 400px;
+        width: 300px;
+        border-radius: 20px;
+    }
+    
+    #about-me{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    #about-me div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #about-me h2{
+        font-size: 25px;
+        color: rgb(70, 110, 180);
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    #about-me p{
+        font-size: 20px;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .passion{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .passion small{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .passion small h1{
+        color: rgb(70, 110, 180);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .passion article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        padding: 20px;
+    }
+    
+    .passion article div{
+        width: 100%;
+    }
+    
+    .passion article div p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 10;
+    }
+    
+    .passion article span{
+        width: 100%;
+    }
+    
+    .passion article span p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 100;
+    }
+    
+    .passion article small{
+        width: 100%;
+        background-color: rgb(157, 46, 46);
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .passion article small img{
+        width: 60%;
+    }
+    
+    .services{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .services div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .services div h1{
+        color: rgb(70, 110, 180);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .services div p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 10;
+    }
+    
+    .services article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .services .left{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .services h2{
+        color: rgb(70, 110, 180);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .services p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 10;
+    }
+    
+    .services .nextbtn:hover{
+        filter: invert(1.5);
+        transition: 0.5s;
+    }
+    
+    .services .middle{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .services .right{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .background{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        background-image: linear-gradient(rgba(125, 135, 132, 0.52), rgba(38, 41, 41, 0.73)), url(./images/bckimagemb.jpg);
+        width: 100%;
+        height: 200px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 20px;
+    }
+    
+    .background h1{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .background p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        font-weight: 10;
+    }
+    
+    .background .playbtn:hover{
+        filter: invert(1.5);
+        transition: 0.5s ease-in-out;
+    }
+
+    #experience{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    
+    #experience div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    #experience div h1{
+        color: rgb(70, 110, 180);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    #experience div p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 10;
+    }
+    
+    #experience article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    #experience article h1{
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    #experience article h2{
+        color: rgb(70, 110, 180);
+        font-size: 15px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    #experience article p{
+        font-size: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 10;
+    }
+    
+    #experience article .red{
+        font-size: 12px;
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
+        font-weight: 10;
+        background-color: black;
+        border-radius: 30px;
+        padding: 5px 30px;
+        width: 80%;
+        animation: loading;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        transition: 1s;
+        left: 0;
+        height: 20px;
+    }
+    
+    #experience article .top{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #experience article .top .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 20px;
+        background-color: whitesmoke;
+        border-radius: 8px;
+    }
+    
+    #experience article .top .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 20px;
+        background-color: whitesmoke;
+        border-radius: 8px;
+    }
+    
+    #experience article .bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    #experience article .bottom .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+        background-color: whitesmoke;
+        border-radius: 8px;
+    }
+    
+    #experience article .bottom .middle{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+        background-color: whitesmoke;
+        border-radius: 8px;
+    }
+    
+    #experience article .bottom .right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+        background-color: whitesmoke;
+        border-radius: 8px;
+    }    
+    
+    .client{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .client div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .client div h1{
+        color: rgb(70, 110, 180);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .client div p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 100;
+    }
+    
+    .client article{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .client .left{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .client article h1{
+        color: #8c1616cb;
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .client article p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 10;
+    }
+    
+    .client .top-image{
+        border: 3px solid rgb(157, 46, 46);
+        border-radius: 90%;
+        height: 80px;
+        width: 80px;
+    }
+    
+    .client .right{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .client .middle{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        gap: 20px;
+    }
+    
+    .touch{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 120px;
+    }
+    
+    .touch div{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 20px;
+    }
+    
+    .touch div h1{
+        color: rgb(70, 110, 180);
+        font-size: 25px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    }
+    
+    .touch div p{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+        font-weight: 100;
+    }
+    
+    .touch small{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 60px;
+    }
+    
+    .touch small input{
+        width: 80%;
+        padding: 10px 15px;
+        font-size: 20px;
+        outline: none;
+        border: 1px solid gray;
+        transition: 0.5s;
+        border-radius: 7px;
+    }
+    
+    .touch small button{
+        padding: 10px 15px;
+        width: 80%;
+        cursor: pointer;
+        background-color: transparent;
+        border-radius: 3px;
+        font-size: 20px;
+        transition: 0.5s ease-in-out;
+        border-radius: 7px;
+    }
+    
+    .touch small input:focus{
+        border: 1px solid crimson;
+    }
+    
+    .touch small button:hover{
+        background-color: crimson;
+    }
+    
+    footer{
+        width: 100%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+    }
+    
+    footer article{
+        height: 220px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-color: rgb(70, 110, 180);
+        padding: 80px;
+    }
+    
+    footer article .left{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    footer .left a img:hover{
+        filter: invert(1.3);
+    }
+    
+    footer article .middle{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer article .right{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    footer article .right p{
+        font-size: 20px;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 10;
+    
+    }
+    
+    footer aside{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(70, 110, 180);
+        padding: 80px;
+        gap: 20px;
+    }
+    
+    footer aside p{
+        font-family: cursive;
+        font-weight: 45;
+        font-size: 15px;
+        color: black;
+    }
+    
+    footer aside span{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .show_nav{
+        right: 0;
+        opacity: 1;
+    }
+    
+    .change_menu_icon{
+        background-image: url(./images/close.png);
+    }
+    
+}
